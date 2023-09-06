@@ -1,0 +1,20 @@
+<div ngClass="top">
+  <div ngClass="header">
+    <div>
+      <button (click)="toggleMenu()">OPEN</button>
+    </div>
+    <div ngClass="avatar-area">
+      <div>
+        <h4 ngClass="name">{{name}}</h4>
+        <h6 ngClass="role">{{role}}</h6>
+      </div>
+      <img [src]="avatar" ngClass="avatar"/>
+    </div>
+  </div>
+  <div ngClass="body">
+    <!-- SIDEBAR COMPONENT -->
+    <div><app-sidebar (toggleMenu)="toggleMenu()" [show]="show"></app-sidebar></div>
+    <!-- SIDEBAR COMPONENT -->
+  </div>
+  <div ngClass="footer">FOOTER</div>
+</div>

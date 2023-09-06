@@ -1,0 +1,12 @@
+.content {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 245px;
+  transition: .5s ease;
+  overflow: hidden;
+  background: blue;
+}
+
+
